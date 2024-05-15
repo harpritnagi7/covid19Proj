@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="/normal/base::layout(~{::section})">
+<head>
+<meta charset="US-ASCII">
+<title>Home-Page</title>
+
+</head>
+<body>
+
+	<section>
+		<div class="your">
+
+				<div class="container">
+					<h1 class="text-center">Feedback</h1>
+
+					
+
+				<form action="#" th:object="${feedback}" method="POST"
+				th:action="@{/user/process-feedback}" class="mt-2">
+
+				<!-- EMAIL -->
+				<label>Email</label>
+				<div class="input-group-prepend">
+					
+					<div class="yo">
+			<input type="text" id="yourEmail" name="yourEmail" 
+			placeholder="Enter Email" class="form-control" required autofocus/>
+			</div></div>
+		</div>
+									
+
+
+			<!-- TEXT-AREA -->
+			<label>Enter querry</label>
+			<div class="yo">
+
+		<textarea name="yourFeedback" id="yourFeedback"
+			class="form-control" rows="4"
+		placeholder="Enter your Feedback" required></textarea>
+
+				</div>
+
+			<div class="yo text-center">
+
+			<button class="btn btn-success">Submit</button>
+			<button type="reset" class="btn btn-warning">Reset</button>
+				</div>
+
+
+								</form>
+
+							</div>
+
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+
+	</section>
+
+
+
+</body>
+</html>

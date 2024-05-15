@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+th:replace="/normal/base::layout(~{::section})">
+<head>
+<meta charset="US-ASCII">
+<title>Home-Page</title>
+
+
+
+</head>
+<body>
+
+	<section>
+
+    <div class="mybooking">
+        
+      <div class="container">
+
+        <h3 class="appointment">Appointment Booking</h3> 
+        <br>
+          
+
+    <form class="well form-horizontal" th:action="@{/user/do-booking}" method="post">
+<fieldset>
+
+<!-- Form Name -->
+
+<!-- name input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label"> Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="wrapper">
+  
+  <input name="name" placeholder="Enter Name" class="form-control"  type="text" required>
+    </div>
+  </div>
+</div>
+
+<!-- email input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Email</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="wrapper">
+  <input name="email" placeholder="Email" class="form-control"  type="email" required>
+    </div>
+  </div>
+</div>
+
+
+<!-- Location select -->
+<label>Choose Area</label>
+<br>
+<select id="type" name="location" class="form-select" required>
+  <option value="none">-- Select your area --</option>
+  <option value="NI">Northern India</option>
+  <option value="WCI">Southern India</option>
+  <option value="EI">Eastern India</option>
+  <option value="SI">Southern India</option>
+</select>
+<br>
+<br>
+<label>Choose hospital</label>
+<br>
+<select id="size" name="hospital" class="form-select" required>
+  <option value="">--Select nearest hospital--</option>
+</select>
+
+
+
+
+<!-- Address input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Address</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="wrapper">
+<textarea name="address" class="form-control md-textarea" placeholder="Address" rows="2" required></textarea>
+      </div>
+  </div>
+</div>
+
+<!-- Address Second input-->
+       <div class="form-group">
+  <label class="col-md-4 control-label">Second Address</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="wrapper">
+       
+<textarea name="addressSecond" class="form-control md-textarea" placeholder="Second Address(optional)" rows="2"></textarea>
+      </div>
+  </div>
+</div>
+
+
+
+<!-- Phone input-->
+       
+<div class="form-group">
+  <label class="col-md-4 control-label">Contact No.</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="wrapper">
+       
+  <input name="phone" placeholder="(+91)" class="form-control" type="text" required>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Button -->
+<div class="form-group text-center">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4"><br>
+    <div class="wrapper">
+<button type="submit" class="btn btn-success" >Submit</button>
+<button type="reset" class="btn btn-warning">Reset</button>
+</div>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+</div>
+  
+   
+	</section>
+
+
+
+</body>
+</html>

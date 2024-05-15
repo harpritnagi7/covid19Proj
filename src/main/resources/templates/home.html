@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang ="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+<meta charset="US-ASCII">
+<title>Home-Page</title>
+</head>
+<body>
+
+
+	<section>
+		<section class="jumbotron jumbotron2 text-center">
+			<div class="container">
+			  <h1 class="jumbotron-heading">Hello User 🙋‍♂️</h1>
+			  <p class="lead">This is COVID-19 Application, it provides booking and coronavirus tracking service to user it's fully encrypted site feel free to login with valid email id.</p>
+			  <p>
+				<a th:href="@{/login}" class="btn btn-outline-danger">EXPLORE</a>
+				
+			  </p>
+			</div>
+		  </section>
+		  
+		  
+		  <div class="album py-5 bg">
+			<div class="container color">
+	
+			  <div class="row color">
+				<div class="col-md-4 color">
+				  <div class="card mb-4 box-shadow mybox">
+					<img class="card-img-top" src="../img/doc.webp" alt="Card image cap"  width="120" height="250">
+					<div class="card-body">
+					  <p class="card-text">Wanna have appointment with doctor ? Click below before that make sure you're logged in into our System</p>
+					  <div class="d-flex justify-content-between align-items-center">
+						<div class="btn-group">
+						  <button type="button" class="btn btn-sm btn-outline-success"><a th:href="@{/login}">Appointment</a></button>
+						  
+	
+						</div>
+						
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md-4">
+				  <div class="card mb-4 box-shadow mybox">
+					<img class="card-img-top" src="../img/earth.jpg" alt="Card image cap"  width="120" height="250">
+					<div class="card-body">
+					  <p class="card-text">Click here to check out Quick status of coronavirus, can be accessed without login id so feel free to click !</p>
+					  <div class="d-flex justify-content-between align-items-center">
+						<div class="btn-group">
+						
+						  <button type="button" class="btn btn-sm btn-outline-success"><a th:href="@{/tracker}">COVID-19 Tracker</a></button>
+					
+						</div>
+					
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md-4">
+				  <div class="card mb-4 box-shadow mybox">
+					<img class="card-img-top" src="../img/forgot.jpg" alt="Card image cap" width="120" height="250">
+					<div class="card-body">
+					  <p class="card-text">Forgot Password ? no worries click here to make new password before that make sure your email id is correct</p>
+					  <div class="d-flex justify-content-between align-items-center">
+						<div class="btn-group">
+						  <button type="button" class="btn btn-sm btn-outline-success"><a th:href="@{/forgot}">Forgot Password</a></button>
+						  </div>
+						</div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+</div>
+
+<section class="jumbotron jumbotron3 text-center">
+	
+	<div class="container">
+	  <h1 class="jumbotron-heading">Want know more about COVID-19 ?</h1>
+	  <p class="lead">If you want to know more about coronavirus like from where it started what tests are being performed to control coronavirus than click below its going to redirect you to official website of WHO</p>
+	  <p>
+		<a href="https://www.who.int/" class="btn btn-outline-danger">Read about Covid-19</a>
+		
+	  </p>
+	  
+	</div>
+ 
+</section>
+
+
+	<div class="who"><iframe width="800" height="500" src="https://www.youtube.com/embed/_1s7__6CjtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			  
+
+
+	</section>
+	
+  
+   
+</body>
+</html>
